@@ -2,8 +2,8 @@ import grpc
 from isPrime import isPrime_pb2, isPrime_pb2_grpc
 import os
 
-# os.environ["GRPC_VERBOSITY"] = "DEBUG"
-os.environ["GRPC_VERBOSITY"] = "NONE"  # ログを非表示にする
+# ログを非表示にする.下のコード内で"NONE"の所を"DEBUG"とするとログが詳細に表示される
+os.environ["GRPC_VERBOSITY"] = "NONE"
 os.environ["NO_PROXY"] = "localhost"
 
 
