@@ -1,4 +1,4 @@
-# isprimeNumber-gRPC
+# isPrimeNumber-gRPC
 
 
 ## Install dependencies
