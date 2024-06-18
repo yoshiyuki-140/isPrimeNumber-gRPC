@@ -1,13 +1,19 @@
 # isprimeNumber-gRPC-go
 
 
-## dependencies
+## Install dependencies
 
 ```bash
 # install grpc
 go get -u google.golang.org/grpc
 # install protoc's go plugin
 go get -u github.com/golang/protobuf/protoc-gen-go
+```
+
+## Usage
+
+```bash
+go run server.go
 ```
 
 ## 参考文献
