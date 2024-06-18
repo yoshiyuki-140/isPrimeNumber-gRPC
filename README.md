@@ -15,7 +15,9 @@ go get -u github.com/golang/protobuf/protoc-gen-go
 ### Client side
 
 ```bash
-python -m pip venv venv
+# if you want to activate virtual environment
+python -m venv venv
+# install dependencies
 python -m pip -r requirements.txt
 ```
 
