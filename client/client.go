@@ -22,6 +22,8 @@ func main() {
 
 	// チェックしたい数字
 	var num int64 = 100
+
+	// RPC呼び出し
 	response, err := p.CheckPrime(context.Background(), &isPrime.Value{Value: num})
 	if err != nil {
 		log.Fatalf("Error when calling CheckPrime: %s", err)
