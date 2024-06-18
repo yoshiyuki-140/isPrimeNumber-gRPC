@@ -1,2 +1,2 @@
-# loadbalancer-go
-The load balancer in distributed system class
+# isprimeNumber-gRPC-go
+
