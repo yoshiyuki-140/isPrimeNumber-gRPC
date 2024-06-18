@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/yoshiyuki-140/isprimenumber-gRPC-go/isPrime"
+	"github.com/yoshiyuki-140/isprimenumber-gRPC-go/server/isPrime"
 	"google.golang.org/grpc"
 )
 
