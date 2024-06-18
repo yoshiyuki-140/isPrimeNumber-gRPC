@@ -6,6 +6,12 @@
 ### Server side
 
 ```bash
+# use `go mod tidy` to install dependencies
+go mod tidy
+```
+If you want to install dependencies manually
+
+```bash
 # install grpc
 go get -u google.golang.org/grpc
 # install protoc's go plugin
