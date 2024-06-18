@@ -1,1 +1,1 @@
-py -m grpc_tools.protoc -I./proto --python_out=./isPrime --pyi_out=./isPrime --grpc_python_out=./isPrime ./isPrime/isPrime.proto
+python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. ./isPrime/isPrime.proto
