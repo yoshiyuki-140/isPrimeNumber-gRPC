@@ -14,7 +14,7 @@ def main():
         stub = isPrime_pb2_grpc.IsPrimeFuncStub(channel)
         # サーバーに送るメッセージを定義
         response = stub.CheckPrime(isPrime_pb2.Value(Value=askNumber()))
-        print("Is 17 a prime number? " + ("Yes" if response.IsPrime else "No"))
+        print("T" if response.IsPrime else "F")  # T: 素数, F: 素数でない
 
 
 def askNumber():
