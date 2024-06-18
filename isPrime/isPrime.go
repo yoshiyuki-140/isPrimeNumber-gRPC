@@ -6,6 +6,7 @@ import (
 )
 
 type Server struct {
+	UnimplementedIsPrimeFuncServer
 }
 
 func (s *Server) CheckPrime(ctx context.Context, in *Value) (*IsPrimeResponse, error) {
