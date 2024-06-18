@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package isPrime;
+
+option go_option = "./isPrime";
+
+// クライアントからサーバーへ送られるメッセージ
+message Value {
+    int value = 1;
+}
+
+// サーバーからクライアントへの返答
+message IsPrimeResponse {
+    bool isPrime = 1;
+}
+
+// サービス定義 (RPC:素数判定)
+service IsPrimeFunc {
+    rpc CheckPrime(Number) returns (IsPrimeResponse)
+}
