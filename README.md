@@ -1,4 +1,4 @@
-# isprimeNumber-gRPC-go
+# isPrimeNumber-gRPC
 
 
 ## Install dependencies
