@@ -3,6 +3,8 @@
 gRPCの実験として、素数判定のプロシージャを呼ぶサンプルを作成しました。
 server-pyはpythonのバージョンのgRPCサーバーで、server-goはGoのバージョンのgRPCサーバーです。
 client-pyはpythonのバージョンのgRPCクライアントです。
+もし、pythonのみで実行したい場合は、server-goを実行する必要はありませんし、
+Goの環境構築を行う必要はありません。<br>
 以下はセットアップの方法です。
 
 ### Server side Setup (Go)
@@ -30,6 +32,7 @@ python -m venv venv
 # install dependencies
 python -m pip -r requirements.txt
 cd server-py
+# execute
 python server.py
 ```
 
@@ -41,6 +44,7 @@ python -m venv venv
 # install dependencies
 python -m pip -r requirements.txt
 cd client-py
+# execute
 python client.py
 ```
 
