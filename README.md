@@ -1,9 +1,11 @@
 # isPrimeNumber-gRPC
 
+gRPCの実験として、素数判定のプロシージャを呼ぶサンプルを作成しました。
+server-pyはpythonのバージョンのgRPCサーバーで、server-goはGoのバージョンのgRPCサーバーです。
+client-pyはpythonのバージョンのgRPCクライアントです。
+以下はセットアップの方法です。
 
-## Install dependencies
-
-### Server side
+### Server side Setup (Go)
 
 ```bash
 # use `go mod tidy` to install dependencies
@@ -16,26 +18,49 @@ If you want to install dependencies manually
 go get -u google.golang.org/grpc
 # install protoc's go plugin
 go get -u github.com/golang/protobuf/protoc-gen-go
+# 
 ```
 
-### Client side
+
+### Server side Setup (Python)
 
 ```bash
 # if you want to activate virtual environment
 python -m venv venv
 # install dependencies
 python -m pip -r requirements.txt
+cd server-py
+python server.py
+```
+
+### Client side Setup (Python)
+
+```bash
+# if you want to activate virtual environment
+python -m venv venv
+# install dependencies
+python -m pip -r requirements.txt
+cd client-py
+python client.py
 ```
 
 ## Usage
 
 ### Server side
 ```bash
-cd server
+cd server-go
 go run server.go
 ```
 
+Or
+
+```bash
+cd server-py
+python server.py
+```
+
 ### Client side
+
 ```bash
 cd client
 python client.py
