@@ -1,9 +1,9 @@
 # isPrimeNumber-gRPC
 
 gRPCの実験として、素数判定のプロシージャを呼ぶサンプルを作成しました。
-server-pyはpythonのバージョンのgRPCサーバーで、server-goはGoのバージョンのgRPCサーバーです。
-client-pyはpythonのバージョンのgRPCクライアントです。
-もし、pythonのみで実行したい場合は、server-goを実行する必要はありませんし、
+server-pyはPythonのバージョンのgRPCサーバーで、server-goはGoのバージョンのgRPCサーバーです。
+client-pyはPythonのバージョンのgRPCクライアントです。
+もし、Pythonのみで実行したい場合は、server-goを実行する必要はありませんし、
 Goの環境構築を行う必要はありません。<br>
 以下はセットアップの方法です。
 
