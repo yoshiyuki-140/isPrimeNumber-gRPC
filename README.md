@@ -66,7 +66,7 @@ python server.py
 ### Client side
 
 ```bash
-cd client
+cd client-py
 python client.py
 ```
 
